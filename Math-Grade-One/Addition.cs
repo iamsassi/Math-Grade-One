@@ -182,13 +182,14 @@ namespace Math_Grade_One
                             {
                                 tries--;
                                 Console.WriteLine("");
-                                Console.WriteLine(string.Format("That is wrong, Right answer is {0}, you have {0} tries", summa, tries));
+                                Console.WriteLine(string.Format("That is wrong, Right answer is {0}, you have {1} tries", summa, tries));
                                 Console.WriteLine("");
                             }
                         }
                         else
                         {
                             ExitGame EndGame = new ExitGame("gameover", fname, points, addition, subtraction, division);
+                            break;
                         }
 
 
