@@ -26,7 +26,7 @@ namespace Math_Grade_One
             this.division = division;
 
             Console.WriteLine("");
-            Console.WriteLine(string.Format("hello {0}", fname));
+            Console.WriteLine(string.Format("Good luck {0}, the more you practice the easier it gets", fname));
             Console.WriteLine("");
 
             var Category = new List<string>();
@@ -48,7 +48,10 @@ namespace Math_Grade_One
             Console.WriteLine("");
             Console.WriteLine("Select which one by typing the number");
             Console.Write("> ");
+            
+            // install Exception handling for FormatException
             int select = Convert.ToInt32(Console.ReadLine());
+
 
 
             while (loop == true)
@@ -70,10 +73,10 @@ namespace Math_Grade_One
                     //    loop = false;
                     //    break;
 
-                    //case '4':
-                    //    ExitGame("menu");
-                    //    loop = false;
-                    //    break;
+                    case 4:
+                        ExitGame GiveUp = new ExitGame("menu", fname, points, addition, subtraction, division);
+                        loop = false;
+                        break;
 
                     default:
                         Console.WriteLine("Please select a category");

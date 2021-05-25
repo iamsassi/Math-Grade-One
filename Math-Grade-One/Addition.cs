@@ -57,7 +57,7 @@ namespace Math_Grade_One
             switch (addition)
             {
                 case 0:
-                    Console.WriteLine(string.Format("Nivå {0} i Addition", addition));
+                    Console.WriteLine(string.Format("Welcome to level {0} Addition, you have {1} lives left", addition, tries));
                     Console.WriteLine("");
 
                     for (int i = 0; i < counter; i++)
@@ -72,7 +72,18 @@ namespace Math_Grade_One
                             Console.WriteLine(string.Format("{0} + {1}", c, d));
                             Console.WriteLine("");
                             Console.Write("> ");
-                            answer = Convert.ToInt32(Console.ReadLine());
+
+                            try
+                            {
+                                answer = Convert.ToInt32(Console.ReadLine());
+                            }
+                            catch (FormatException)
+                            {
+
+                                Console.WriteLine("The answer can't be left empty or contain letters");
+                                Console.ReadLine();
+                                break;
+                            }
 
                             if (answer == summa)
                             {
@@ -86,7 +97,7 @@ namespace Math_Grade_One
                             {
                                 tries--;
                                 Console.WriteLine("");
-                                Console.WriteLine(string.Format("That is wrong, Right answer is {0}, you have {0} tries", summa, tries));
+                                Console.WriteLine(string.Format("That is wrong, Right answer is {0}, you have {1} tries", summa, tries));
                                 Console.WriteLine("");
                             }
                         }
@@ -106,7 +117,7 @@ namespace Math_Grade_One
                     // addition level 2
 
                 case 1:
-                    Console.WriteLine(string.Format("Nivå {0} i Addition", addition));
+                    Console.WriteLine(string.Format("Welcome to level {0} Addition, you have {1} lives left", addition, tries));
                     Console.WriteLine("");
 
                     for (int i = 0; i < counter; i++)
@@ -121,7 +132,18 @@ namespace Math_Grade_One
                             Console.WriteLine(string.Format("{0} + {1}", c, d));
                             Console.WriteLine("");
                             Console.Write("> ");
-                            answer = Convert.ToInt32(Console.ReadLine());
+
+                            try
+                            {
+                                answer = Convert.ToInt32(Console.ReadLine());
+                            }
+                            catch (FormatException)
+                            {
+
+                                Console.WriteLine("The answer can't be left empty or contain letters");
+                                Console.ReadLine();
+                                break;
+                            }
 
                             if (answer == summa)
                             {
@@ -135,7 +157,7 @@ namespace Math_Grade_One
                             {
                                 tries--;
                                 Console.WriteLine("");
-                                Console.WriteLine(string.Format("That is wrong, Right answer is {0}, you have {0} tries", summa, tries));
+                                Console.WriteLine(string.Format("That is wrong, Right answer is {0}, you have {1} tries", summa, tries));
                                 Console.WriteLine("");
                             }
                         }
@@ -153,7 +175,7 @@ namespace Math_Grade_One
                     break;
 
                 case 2:
-                    Console.WriteLine(string.Format("Nivå {0} i Addition", addition));
+                    Console.WriteLine(string.Format("Welcome to level {0} Addition, you have {1} lives left", addition, tries));
                     Console.WriteLine("");
 
                     for (int i = 0; i < counter; i++)
@@ -168,7 +190,18 @@ namespace Math_Grade_One
                             Console.WriteLine(string.Format("{0} + {1}", c, d));
                             Console.WriteLine("");
                             Console.Write("> ");
-                            answer = Convert.ToInt32(Console.ReadLine());
+
+                            try
+                            {
+                                answer = Convert.ToInt32(Console.ReadLine());
+                            }
+                            catch (FormatException)
+                            {
+
+                                Console.WriteLine("The answer can't be left empty or contain letters");
+                                Console.ReadLine();
+                                break;
+                            }
 
                             if (answer == summa)
                             {

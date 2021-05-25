@@ -22,20 +22,40 @@ namespace Math_Grade_One
             this.subtraction = subtraction;
             this.division = division;
 
-            if(input == "gameover")
-            {
+            
+                Console.Clear();
+                if(input == "gameover")
+                {
                 Console.WriteLine(string.Format("Too bad {0} that it didnt go the whole way this time, make sure to practice",fname));
+                }
+                else
+                 {
+                Console.WriteLine("too bad you want to end the game, come back for your daily practice");
+                }
+
                 Console.WriteLine("");
-                Console.WriteLine("You got reached the following:");
+                Console.WriteLine("You reached the following:");
                 Console.WriteLine(string.Format("Points: {0}", points));
                 Console.WriteLine(string.Format("Addition level: {0}",addition));
                 Console.WriteLine(string.Format("Subtraction level: {0}", subtraction));
                 Console.WriteLine(string.Format("Division level: {0}", division));
-            }
-            else
-            {
-                Console.WriteLine("too bad you want to end the game, come back for your daily practice");
-            }
+
+                Console.WriteLine("");
+                Console.WriteLine("Do you want to try again? Y for Yes or N for no");
+                Console.WriteLine("");
+                Console.Write("> ");
+
+                string answer = Console.ReadLine();
+
+                if(answer.ToLower() == "y")
+                {
+                    Menu user = new Menu(fname, 0, 3, 0, 0, 0);
+                }
+                else
+                {
+                    Environment.Exit(0);
+                }
+          
         }
     }
 }

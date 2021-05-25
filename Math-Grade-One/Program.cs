@@ -2,7 +2,7 @@
 
 namespace Math_Grade_One
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -13,6 +13,7 @@ namespace Math_Grade_One
             Menu user = new Menu(Fname, 0, 3, 0, 0, 0);
 
             Console.ReadLine();
+
         }
     }
 }
