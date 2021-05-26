@@ -63,15 +63,15 @@ namespace Math_Grade_One
                         loop = false;
                         break;
 
-                    //case '2':
-                    //    Subtraction minus = new Subtraction(fname, points, tries, addition, subtraction, division);
-                    //    loop = false;
-                    //    break;
+                    case 2:
+                        Subtraction minus = new Subtraction(fname, points, tries, addition, subtraction, division);
+                        loop = false;
+                        break;
 
-                    //case "3":
-                    //    Division divide = new Division(fname, points, tries, addition, subtraction, division);
-                    //    loop = false;
-                    //    break;
+                    case 3:
+                        Division divide = new Division(fname, points, tries, addition, subtraction, division);
+                        loop = false;
+                        break;
 
                     case 4:
                         ExitGame GiveUp = new ExitGame("menu", fname, points, addition, subtraction, division);
